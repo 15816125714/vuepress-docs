@@ -1,0 +1,25 @@
+.flex-layout {
+  overflow-x: hidden;
+  overflow-y: auto;
+
+  &:not(.is-clear-flex) {
+    display: flex;
+  }
+
+  &.is-vertical {
+    flex-direction: column;
+  }
+
+  &.is-wrap {
+    flex-wrap: wrap;
+  }
+
+  &.is-center {
+    align-items: center;
+    justify-content: center;
+  }
+
+  &.is-fixed-size {
+    flex: 1 0 auto;
+  }
+}
